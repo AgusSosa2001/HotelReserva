@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos externa -->
 </head>
 <body>
     <header>
@@ -34,5 +34,45 @@
             <a href="#explore" class="explore-btn">Explore It</a>
         </div>
     </header>
+
+    <section class="booking-bar">
+        <form>
+            <div class="form-group">
+                <label for="arrival">Arrival</label>
+                <input type="date" id="arrival" name="arrival">
+            </div>
+            <div class="form-group">
+                <label for="departure">Departure</label>
+                <input type="date" id="departure" name="departure">
+            </div>
+            <div class="form-group">
+                <label for="rooms">Room</label>
+                <select id="rooms" name="rooms">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="adults">Adults</label>
+                <select id="adults" name="adults">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="children">Child</label>
+                <select id="children" name="children">
+                    <option value="0">0 Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

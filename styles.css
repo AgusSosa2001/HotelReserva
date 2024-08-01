@@ -35,6 +35,7 @@ header {
 .main-nav {
     background-color: #333;
     color: white;
+    position: relative;
 }
 
 .main-nav ul {
@@ -105,5 +106,48 @@ header {
 }
 
 .explore-btn:hover {
+    background-color: #e09e00;
+}
+
+/* Booking Bar */
+.booking-bar {
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.booking-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin: 0 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
     background-color: #e09e00;
 }
