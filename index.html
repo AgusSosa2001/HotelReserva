@@ -8,28 +8,32 @@
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="logo.png" alt="Hotel Booking Logo">
-            </div>
-            <div class="contact-info">
-                <span>123 456 7890</span>
+        <div class="minwidth">
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="LogoHotel.png" alt="Hotel Booking Logo">
+                </div>
+                <nav class="main-nav">
+                    <div class="login-register">
+                        <a href="#login">Login</a> / <a href="#register">Register</a>
+                    </div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#accommodation">Accommodation</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li> <!-- Cambio en el texto del enlace -->
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <span>123 456 7890</span>
+                </div>
             </div>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#accommodation">Accommodation</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-            <div class="login-register">
-                <a href="#login">Login</a> / <a href="#register">Register</a>
-            </div>
-        </nav>
+
         <div class="hero">
+            <img class="imgHero" src="hero.jpg" alt="">
             <h1>A Brand New Hotel Beyond Ordinary</h1>
             <a href="#explore" class="explore-btn">Explore It</a>
         </div>
@@ -39,15 +43,16 @@
         <form>
             <div class="form-group">
                 <label for="arrival">Arrival</label>
-                <input type="date" id="arrival" name="arrival">
+                <input type="date" id="arrival" name="arrival" required>
             </div>
             <div class="form-group">
                 <label for="departure">Departure</label>
-                <input type="date" id="departure" name="departure">
+                <input type="date" id="departure" name="departure" required>
             </div>
             <div class="form-group">
                 <label for="rooms">Room</label>
-                <select id="rooms" name="rooms">
+                <select id="rooms" name="rooms" required>
+                    <option value="" disabled selected>Select rooms</option>
                     <option value="1">1 Room</option>
                     <option value="2">2 Rooms</option>
                     <option value="3">3 Rooms</option>
@@ -55,15 +60,17 @@
             </div>
             <div class="form-group">
                 <label for="adults">Adults</label>
-                <select id="adults" name="adults">
+                <select id="adults" name="adults" required>
+                    <option value="" disabled selected>Select adults</option>
                     <option value="1">1 Adult</option>
                     <option value="2">2 Adults</option>
                     <option value="3">3 Adults</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="children">Child</label>
+                <label for="children">Children</label> <!-- Cambio en el texto del label -->
                 <select id="children" name="children">
+                    <option value="" disabled selected>Select children</option>
                     <option value="0">0 Children</option>
                     <option value="1">1 Child</option>
                     <option value="2">2 Children</option>
